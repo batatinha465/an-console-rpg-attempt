@@ -153,6 +153,7 @@ class Game
                 Console.ReadKey();
                 ShowStats();
                 PlayerTurn();
+                break;
         }
 
         items.Inventory[index] = "Vazio";
