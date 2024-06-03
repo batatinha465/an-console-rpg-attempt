@@ -1,6 +1,6 @@
 ﻿namespace TentativaDeRPG;
 
-internal class Player
+class Player
 {
     // leveling system
     int lvl = 1;
@@ -30,6 +30,12 @@ internal class Player
         set { health = Math.Max(0, value); }
     }
 
+    public int MaxHealth
+    {
+        get { return maxHealth; }
+        set { maxHealth = value; }
+    }
+
     public int Strength
     {
         get { return strength; }
@@ -53,5 +59,17 @@ internal class Player
                           $"Vida..: {health}/{maxHealth}\n" +
                           $"Força.: {strength}\n" +
                           $"Defesa: {defense}");
+    }
+
+    public void UseSimpleLifePotion()
+    {
+        Health += 5;
+
+        Console.WriteLine($"\nPoção curou 5 de vida.");
+
+        if (Health > MaxHealth)
+        {
+            Health = MaxHealth;
+        }
     }
 }

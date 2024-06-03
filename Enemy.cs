@@ -38,7 +38,7 @@ class BaseEnemy
     public virtual void ShowEnemyStats()
     {
         Console.WriteLine("Inimigo\n");
-        
+
         Console.WriteLine($"Nome..: {name}\n" +
                           $"Vida..: {health}/{maxHealth}\n" +
                           $"Força.: {strength}\n" +

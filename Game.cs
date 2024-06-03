@@ -1,10 +1,11 @@
 ﻿namespace TentativaDeRPG;
 
-internal class Game
+class Game
 {
     // object instantiation
     Player player;
     BaseEnemy enemy;
+    Items items;
 
     // variables
     bool gameEnded;
@@ -17,7 +18,8 @@ internal class Game
     {
         player = new Player();
         enemy = new BaseEnemy();
-        
+        items = new Items();
+
         gameEnded = false;
         playerOriginalDefense = player.Defense;
     }
@@ -28,6 +30,12 @@ internal class Game
         Attack = 1,
         Defend = 2,
         Item = 3
+    }
+
+    // items enum
+    public enum ItemsID
+    {
+        SimpleLifePotion = 1
     }
 
     // functions
@@ -100,29 +108,63 @@ internal class Game
             case Moves.Attack:
                 damage = Math.Max(0, player.Strength - enemy.Defense);
                 Console.WriteLine($"\nVocê causou {damage} de dano a {enemy.Name}");
+                Console.ReadKey();
                 enemy.Health -= damage;
                 break;
             case Moves.Defend:
                 Console.WriteLine("\nVocê aumenta sua defesa em 1 nessa rodada.");
+                Console.ReadKey();
                 player.Defense++;
                 break;
             case Moves.Item:
-                Console.WriteLine("\nVocê não possui nenhum item.");
+                ChooseItem();
+                break;
+        }
+    }
+
+    public void ChooseItem()
+    {
+        items.ShowInventory();
+
+        Console.Write("\n\nEscolha um item: ");
+
+        if (int.TryParse(Console.ReadLine(), out int itemChosen) && itemChosen > 0 && itemChosen < 4)
+        {
+            CheckItem(itemChosen - 1);
+        }
+        else
+        {
+            Console.WriteLine("\nOpção inválida, tente novamente.");
+            Console.ReadKey();
+            ShowStats();
+            PlayerTurn();
+        }
+    }
+
+    public void CheckItem(int index)
+    {
+        switch ((ItemsID)items.InventoryID[index])
+        {
+            case ItemsID.SimpleLifePotion:
+                player.UseSimpleLifePotion();
+                break;
+            case 0:
+                Console.WriteLine("\nOpção inválida, tente novamente.");
                 Console.ReadKey();
                 ShowStats();
                 PlayerTurn();
-                break;
         }
 
-        Console.ReadKey();
+        items.Inventory[index] = "Vazio";
+        items.InventoryID[index] = 0;
     }
 
     public void EnemyTurn()
     {
         int damage = Math.Max(0, enemy.Strength - player.Defense);
-        
+
         Console.WriteLine($"{enemy.Name} causou {damage} de dano a você.");
-        Console.ReadLine();
+        Console.ReadKey();
 
         player.Health -= damage;
     }
@@ -137,7 +179,7 @@ internal class Game
         if (player.Health == 0)
         {
             ShowStats();
-            Console.WriteLine("Você morreu. Jogo acabou.");
+            Console.WriteLine("\nVocê morreu. Jogo acabou.");
             Console.ReadKey();
             return true;
         }
@@ -159,7 +201,7 @@ internal class Game
         {
             return true;
         }
-        else if (killCount == 3)
+        else if (killCount == 1)
         {
             Console.WriteLine($"\nVocê matou {killCount} inimigos. Fim de jogo, por enquanto.");
             return true;
