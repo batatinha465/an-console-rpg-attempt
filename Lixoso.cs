@@ -1,5 +1,4 @@
-﻿namespace TentativaDeRpg;
-
+﻿namespace TentativaDeRPG;
 class Lixoso : BaseEnemy
 {
     // constructor
