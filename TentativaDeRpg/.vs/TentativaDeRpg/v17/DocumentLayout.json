@@ -5,6 +5,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{A8536EED-69D8-4812-A340-3C3FBB8B03E9}|TentativaDeRpg.csproj|c:\\users\\cliente info haus\\onedrive\\documentos\\github\\an-console-rpg-attempt\\tentativaderpg\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8536EED-69D8-4812-A340-3C3FBB8B03E9}|TentativaDeRpg.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8536EED-69D8-4812-A340-3C3FBB8B03E9}|TentativaDeRpg.csproj|c:\\users\\cliente info haus\\onedrive\\documentos\\github\\an-console-rpg-attempt\\tentativaderpg\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8536EED-69D8-4812-A340-3C3FBB8B03E9}|TentativaDeRpg.csproj|solutionrelative:game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8536EED-69D8-4812-A340-3C3FBB8B03E9}|TentativaDeRpg.csproj|c:\\users\\cliente info haus\\onedrive\\documentos\\github\\an-console-rpg-attempt\\tentativaderpg\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8536EED-69D8-4812-A340-3C3FBB8B03E9}|TentativaDeRpg.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8536EED-69D8-4812-A340-3C3FBB8B03E9}|TentativaDeRpg.csproj|c:\\users\\cliente info haus\\onedrive\\documentos\\github\\an-console-rpg-attempt\\tentativaderpg\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8536EED-69D8-4812-A340-3C3FBB8B03E9}|TentativaDeRpg.csproj|solutionrelative:enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8536EED-69D8-4812-A340-3C3FBB8B03E9}|TentativaDeRpg.csproj|c:\\users\\cliente info haus\\onedrive\\documentos\\github\\an-console-rpg-attempt\\tentativaderpg\\lixoso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8536EED-69D8-4812-A340-3C3FBB8B03E9}|TentativaDeRpg.csproj|solutionrelative:lixoso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,13 +46,65 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Lixoso.cs",
+              "DocumentMoniker": "C:\\Users\\Cliente Info Haus\\OneDrive\\Documentos\\GitHub\\an-console-rpg-attempt\\TentativaDeRpg\\Lixoso.cs",
+              "RelativeDocumentMoniker": "Lixoso.cs",
+              "ToolTip": "C:\\Users\\Cliente Info Haus\\OneDrive\\Documentos\\GitHub\\an-console-rpg-attempt\\TentativaDeRpg\\Lixoso.cs",
+              "RelativeToolTip": "Lixoso.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T05:06:29.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\Users\\Cliente Info Haus\\OneDrive\\Documentos\\GitHub\\an-console-rpg-attempt\\TentativaDeRpg\\Enemy.cs",
+              "RelativeDocumentMoniker": "Enemy.cs",
+              "ToolTip": "C:\\Users\\Cliente Info Haus\\OneDrive\\Documentos\\GitHub\\an-console-rpg-attempt\\TentativaDeRpg\\Enemy.cs",
+              "RelativeToolTip": "Enemy.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T05:06:01.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\Cliente Info Haus\\OneDrive\\Documentos\\GitHub\\an-console-rpg-attempt\\TentativaDeRpg\\Player.cs",
+              "RelativeDocumentMoniker": "Player.cs",
+              "ToolTip": "C:\\Users\\Cliente Info Haus\\OneDrive\\Documentos\\GitHub\\an-console-rpg-attempt\\TentativaDeRpg\\Player.cs",
+              "RelativeToolTip": "Player.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T05:05:24.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\Cliente Info Haus\\OneDrive\\Documentos\\GitHub\\an-console-rpg-attempt\\TentativaDeRpg\\Game.cs",
+              "RelativeDocumentMoniker": "Game.cs",
+              "ToolTip": "C:\\Users\\Cliente Info Haus\\OneDrive\\Documentos\\GitHub\\an-console-rpg-attempt\\TentativaDeRpg\\Game.cs",
+              "RelativeToolTip": "Game.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T05:03:37.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Cliente Info Haus\\OneDrive\\Documentos\\GitHub\\an-console-rpg-attempt\\TentativaDeRpg\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Cliente Info Haus\\OneDrive\\Documentos\\GitHub\\an-console-rpg-attempt\\TentativaDeRpg\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-03T05:02:38.574Z",
               "EditorCaption": ""

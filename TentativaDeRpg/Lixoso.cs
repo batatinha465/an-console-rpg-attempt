@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace TentativaDeRpg;
 
-namespace TentativaDeRpg
+class Lixoso : BaseEnemy
 {
-    internal class Lixoso
+    // constructor
+    public Lixoso()
     {
+        name = "Lixoso";
+        health = 2;
+        maxHealth = 2;
+        strength = 1;
+        defense = 0;
     }
 }
