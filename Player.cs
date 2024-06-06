@@ -48,17 +48,51 @@ class Player
         set { defense = value; }
     }
 
+    public int Lvl
+    {
+        get { return lvl; }
+        set { lvl = value; }
+    }
+
+    public int Exp
+    {
+        get { return exp; }
+        set { exp = value; }
+    }
+
+    public int MaxExp
+    {
+        get { return maxExp; }
+        set { maxExp = value; }
+    }
+
     // functions
     public void ShowPlayerStats()
     {
         Console.Clear();
 
-        Console.WriteLine("Player\n");
+        Console.WriteLine($"Player  Level: {lvl}  {exp}/{maxExp}\n");
 
         Console.WriteLine($"Nome..: {name}\n" +
                           $"Vida..: {health}/{maxHealth}\n" +
                           $"Força.: {strength}\n" +
                           $"Defesa: {defense}");
+    }
+
+    public void IncreaseStats()
+    {
+        MaxHealth = Convert.ToInt32(MaxHealth * 1.2);
+        Health = MaxHealth;
+
+        if (Lvl % 3 == 0)
+        {
+            Strength++;
+        }
+
+        if (Lvl % 5 == 0)
+        {
+            Defense++;
+        }
     }
 
     public void UseSimpleLifePotion()

@@ -111,7 +111,7 @@ class Game
         {
             case Moves.Attack:
                 damage = Math.Max(0, player.Strength - enemy.Defense);
-                Console.WriteLine($"\nVocê causou {damage} de dano a {enemy.Name}");
+                Console.WriteLine($"\nVocê causou {damage} de dano a {enemy.Name}.");
                 Console.ReadKey();
                 enemy.Health -= damage;
                 break;
@@ -186,6 +186,25 @@ class Game
         player.Defense = playerOriginalDefense;
     }
 
+    public void CheckDrops()
+    {
+        player.Exp += enemy.ExpDrop;
+
+        if (player.Exp >= player.MaxExp)
+        {
+            int extraExp = player.Exp - player.MaxExp;
+
+            player.Exp = extraExp;
+
+            Console.WriteLine("\nVocê upou de level!");
+            Console.ReadKey();
+
+            player.Lvl++;
+            player.MaxExp = Convert.ToInt32(player.MaxExp * 1.1);
+            player.IncreaseStats();
+        }
+    }
+
     public bool CheckBattleState()
     {
         if (player.Health == 0)
@@ -201,6 +220,10 @@ class Game
             Console.WriteLine("\nInimigo morreu. Você venceu!");
             Console.ReadKey();
             killCount++;
+
+            Console.WriteLine($"\nVocê ganhou {enemy.ExpDrop} de xp.");
+            Console.ReadKey();
+            CheckDrops();
             return true;
         }
 

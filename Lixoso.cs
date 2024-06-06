@@ -10,5 +10,6 @@ class Lixoso : BaseEnemy
         maxHealth = 2;
         strength = 1;
         defense = 0;
+        expDrop = 20;
     }
 }

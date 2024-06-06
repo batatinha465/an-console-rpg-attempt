@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Cliente Info Haus\\OneDrive\\Documentos\\GitHub\\an-console-rpg-attempt\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{887BD083-F485-4979-8311-CD3D4D6A928D}|TentativaDeRPG.csproj|c:\\users\\cliente info haus\\onedrive\\documentos\\github\\an-console-rpg-attempt\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{887BD083-F485-4979-8311-CD3D4D6A928D}|TentativaDeRPG.csproj|solutionrelative:items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{887BD083-F485-4979-8311-CD3D4D6A928D}|TentativaDeRPG.csproj|c:\\users\\cliente info haus\\onedrive\\documentos\\github\\an-console-rpg-attempt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{887BD083-F485-4979-8311-CD3D4D6A928D}|TentativaDeRPG.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{887BD083-F485-4979-8311-CD3D4D6A928D}|TentativaDeRPG.csproj|c:\\users\\cliente info haus\\onedrive\\documentos\\github\\an-console-rpg-attempt\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{887BD083-F485-4979-8311-CD3D4D6A928D}|TentativaDeRPG.csproj|solutionrelative:game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{887BD083-F485-4979-8311-CD3D4D6A928D}|TentativaDeRPG.csproj|c:\\users\\cliente info haus\\onedrive\\documentos\\github\\an-console-rpg-attempt\\baseenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{887BD083-F485-4979-8311-CD3D4D6A928D}|TentativaDeRPG.csproj|solutionrelative:baseenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{887BD083-F485-4979-8311-CD3D4D6A928D}|TentativaDeRPG.csproj|c:\\users\\cliente info haus\\onedrive\\documentos\\github\\an-console-rpg-attempt\\lixoso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{887BD083-F485-4979-8311-CD3D4D6A928D}|TentativaDeRPG.csproj|solutionrelative:lixoso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{887BD083-F485-4979-8311-CD3D4D6A928D}|TentativaDeRPG.csproj|c:\\users\\cliente info haus\\onedrive\\documentos\\github\\an-console-rpg-attempt\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{887BD083-F485-4979-8311-CD3D4D6A928D}|TentativaDeRPG.csproj|solutionrelative:enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{887BD083-F485-4979-8311-CD3D4D6A928D}|TentativaDeRPG.csproj|c:\\users\\cliente info haus\\onedrive\\documentos\\github\\an-console-rpg-attempt\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{887BD083-F485-4979-8311-CD3D4D6A928D}|TentativaDeRPG.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{887BD083-F485-4979-8311-CD3D4D6A928D}|TentativaDeRPG.csproj|c:\\users\\cliente info haus\\onedrive\\documentos\\github\\an-console-rpg-attempt\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{887BD083-F485-4979-8311-CD3D4D6A928D}|TentativaDeRPG.csproj|solutionrelative:items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{887BD083-F485-4979-8311-CD3D4D6A928D}|TentativaDeRPG.csproj|c:\\users\\cliente info haus\\onedrive\\documentos\\github\\an-console-rpg-attempt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{887BD083-F485-4979-8311-CD3D4D6A928D}|TentativaDeRPG.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,7 +50,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Cliente Info Haus\\OneDrive\\Documentos\\GitHub\\an-console-rpg-attempt\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -58,70 +58,68 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T05:18:37.691Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T05:18:37.691Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Items.cs",
               "DocumentMoniker": "C:\\Users\\Cliente Info Haus\\OneDrive\\Documentos\\GitHub\\an-console-rpg-attempt\\Items.cs",
               "RelativeDocumentMoniker": "Items.cs",
               "ToolTip": "C:\\Users\\Cliente Info Haus\\OneDrive\\Documentos\\GitHub\\an-console-rpg-attempt\\Items.cs",
               "RelativeToolTip": "Items.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAwwC0AAAABAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAAwwC0AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T05:43:53.11Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T05:43:53.11Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\Cliente Info Haus\\OneDrive\\Documentos\\GitHub\\an-console-rpg-attempt\\Player.cs",
               "RelativeDocumentMoniker": "Player.cs",
               "ToolTip": "C:\\Users\\Cliente Info Haus\\OneDrive\\Documentos\\GitHub\\an-console-rpg-attempt\\Player.cs",
               "RelativeToolTip": "Player.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAuwEsAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAG0AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-03T05:18:34.423Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Enemy.cs",
-              "DocumentMoniker": "C:\\Users\\Cliente Info Haus\\OneDrive\\Documentos\\GitHub\\an-console-rpg-attempt\\Enemy.cs",
-              "RelativeDocumentMoniker": "Enemy.cs",
-              "ToolTip": "C:\\Users\\Cliente Info Haus\\OneDrive\\Documentos\\GitHub\\an-console-rpg-attempt\\Enemy.cs",
-              "RelativeToolTip": "Enemy.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAowC4AAAABAAAA",
+              "DocumentIndex": 1,
+              "Title": "BaseEnemy.cs",
+              "DocumentMoniker": "C:\\Users\\Cliente Info Haus\\OneDrive\\Documentos\\GitHub\\an-console-rpg-attempt\\BaseEnemy.cs",
+              "RelativeDocumentMoniker": "BaseEnemy.cs",
+              "ToolTip": "C:\\Users\\Cliente Info Haus\\OneDrive\\Documentos\\GitHub\\an-console-rpg-attempt\\BaseEnemy.cs",
+              "RelativeToolTip": "BaseEnemy.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAIwDUAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-03T05:17:23.961Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Lixoso.cs",
               "DocumentMoniker": "C:\\Users\\Cliente Info Haus\\OneDrive\\Documentos\\GitHub\\an-console-rpg-attempt\\Lixoso.cs",
               "RelativeDocumentMoniker": "Lixoso.cs",
               "ToolTip": "C:\\Users\\Cliente Info Haus\\OneDrive\\Documentos\\GitHub\\an-console-rpg-attempt\\Lixoso.cs",
               "RelativeToolTip": "Lixoso.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-03T05:17:40.083Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Game.cs",
               "DocumentMoniker": "C:\\Users\\Cliente Info Haus\\OneDrive\\Documentos\\GitHub\\an-console-rpg-attempt\\Game.cs",
               "RelativeDocumentMoniker": "Game.cs",
               "ToolTip": "C:\\Users\\Cliente Info Haus\\OneDrive\\Documentos\\GitHub\\an-console-rpg-attempt\\Game.cs",
               "RelativeToolTip": "Game.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAANcAAAAfAAAA",
+              "ViewState": "AQIAAOkAAAAAAAAAAAAuwPYAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-03T05:17:25.419Z",
               "EditorCaption": ""
