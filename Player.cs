@@ -66,6 +66,7 @@ class Player
         Health += 5;
 
         Console.WriteLine($"\nPoção curou 5 de vida.");
+        Console.ReadKey();
 
         if (Health > MaxHealth)
         {

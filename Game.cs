@@ -80,22 +80,26 @@ class Game
 
     public void PlayerTurn()
     {
-        Console.WriteLine("\n1 - Atacar");
-        Console.WriteLine("2 - Defender");
-        Console.WriteLine("3 - Item");
-        Console.Write("\nO que deseja fazer: ");
+        bool validMove = false;
 
-        if (int.TryParse(Console.ReadLine(), out int move) && Enum.IsDefined(typeof(Moves), move))
+        while (validMove == false)
         {
-            ExecutePlayerMove((Moves)move);
-        }
-        else
-        {
-            Console.WriteLine("\nOpção inválida, tente novamente.");
-            Console.ReadKey();
-            ShowStats();
-            PlayerTurn();
-            return;
+            Console.WriteLine("\n1 - Atacar");
+            Console.WriteLine("2 - Defender");
+            Console.WriteLine("3 - Item");
+            Console.Write("\nO que deseja fazer: ");
+
+            if (int.TryParse(Console.ReadLine(), out int move) && Enum.IsDefined(typeof(Moves), move))
+            {
+                ExecutePlayerMove((Moves)move);
+                validMove = true;
+            }
+            else
+            {
+                Console.WriteLine("\nOpção inválida, tente novamente.");
+                Console.ReadKey();
+                ShowStats();
+            }
         }
     }
 
@@ -124,21 +128,28 @@ class Game
 
     public void ChooseItem()
     {
-        items.ShowInventory();
+        bool validMove = false;
 
-        Console.Write("\n\nEscolha um item: ");
+        while (validMove == false)
+        {
+            items.ShowInventory();
 
-        if (int.TryParse(Console.ReadLine(), out int itemChosen) && itemChosen > 0 && itemChosen < 4)
-        {
-            CheckItem(itemChosen - 1);
+            Console.Write("\n\nEscolha um item: ");
+
+            if (int.TryParse(Console.ReadLine(), out int itemChosen) && itemChosen > 0 && itemChosen < 4)
+            {
+                CheckItem(itemChosen - 1);
+                validMove = true;
+            }
+            else
+            {
+                Console.WriteLine("\nOpção inválida, tente novamente.");
+                Console.ReadKey();
+                ShowStats();
+            }
         }
-        else
-        {
-            Console.WriteLine("\nOpção inválida, tente novamente.");
-            Console.ReadKey();
-            ShowStats();
-            PlayerTurn();
-        }
+
+
     }
 
     public void CheckItem(int index)
@@ -152,7 +163,7 @@ class Game
                 Console.WriteLine("\nOpção inválida, tente novamente.");
                 Console.ReadKey();
                 ShowStats();
-                PlayerTurn();
+                ChooseItem();
                 break;
         }
 
@@ -202,7 +213,7 @@ class Game
         {
             return true;
         }
-        else if (killCount == 1)
+        else if (killCount == 3)
         {
             Console.WriteLine($"\nVocê matou {killCount} inimigos. Fim de jogo, por enquanto.");
             return true;
