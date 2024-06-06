@@ -1,0 +1,15 @@
+C:\Users\Cliente Info Haus\OneDrive\Documentos\GitHub\an-console-rpg-attempt\bin\Debug\net8.0\TentativaDeRPG.exe
+C:\Users\Cliente Info Haus\OneDrive\Documentos\GitHub\an-console-rpg-attempt\bin\Debug\net8.0\TentativaDeRPG.deps.json
+C:\Users\Cliente Info Haus\OneDrive\Documentos\GitHub\an-console-rpg-attempt\bin\Debug\net8.0\TentativaDeRPG.runtimeconfig.json
+C:\Users\Cliente Info Haus\OneDrive\Documentos\GitHub\an-console-rpg-attempt\bin\Debug\net8.0\TentativaDeRPG.dll
+C:\Users\Cliente Info Haus\OneDrive\Documentos\GitHub\an-console-rpg-attempt\bin\Debug\net8.0\TentativaDeRPG.pdb
+C:\Users\Cliente Info Haus\OneDrive\Documentos\GitHub\an-console-rpg-attempt\obj\Debug\net8.0\TentativaDeRPG.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cliente Info Haus\OneDrive\Documentos\GitHub\an-console-rpg-attempt\obj\Debug\net8.0\TentativaDeRPG.AssemblyInfoInputs.cache
+C:\Users\Cliente Info Haus\OneDrive\Documentos\GitHub\an-console-rpg-attempt\obj\Debug\net8.0\TentativaDeRPG.AssemblyInfo.cs
+C:\Users\Cliente Info Haus\OneDrive\Documentos\GitHub\an-console-rpg-attempt\obj\Debug\net8.0\TentativaDeRPG.csproj.CoreCompileInputs.cache
+C:\Users\Cliente Info Haus\OneDrive\Documentos\GitHub\an-console-rpg-attempt\obj\Debug\net8.0\TentativaDeRPG.sourcelink.json
+C:\Users\Cliente Info Haus\OneDrive\Documentos\GitHub\an-console-rpg-attempt\obj\Debug\net8.0\TentativaDeRPG.dll
+C:\Users\Cliente Info Haus\OneDrive\Documentos\GitHub\an-console-rpg-attempt\obj\Debug\net8.0\refint\TentativaDeRPG.dll
+C:\Users\Cliente Info Haus\OneDrive\Documentos\GitHub\an-console-rpg-attempt\obj\Debug\net8.0\TentativaDeRPG.pdb
+C:\Users\Cliente Info Haus\OneDrive\Documentos\GitHub\an-console-rpg-attempt\obj\Debug\net8.0\TentativaDeRPG.genruntimeconfig.cache
+C:\Users\Cliente Info Haus\OneDrive\Documentos\GitHub\an-console-rpg-attempt\obj\Debug\net8.0\ref\TentativaDeRPG.dll
