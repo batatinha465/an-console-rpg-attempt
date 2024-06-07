@@ -8,6 +8,7 @@ class Game
     Items items;
 
     // variables
+    Random random;
     bool gameEnded;
     bool battleEnded;
     int playerOriginalDefense;
@@ -20,6 +21,7 @@ class Game
         enemy = new BaseEnemy();
         items = new Items();
 
+        random = new Random();
         gameEnded = false;
         playerOriginalDefense = player.Defense;
     }
@@ -38,7 +40,7 @@ class Game
         SimpleLifePotion = 1
     }
 
-    // functions
+    // game functions
     public void Run()
     {
         while (gameEnded == false)
@@ -67,7 +69,19 @@ class Game
 
     public void StartBattle()
     {
-        enemy = new Lixoso();
+        int spawnChance = random.Next(1, 101);
+
+        if (killCount >= 5 && spawnChance < 40)
+        {
+            enemy = new Gordalho();
+        }
+        else
+        {
+            Console.WriteLine(spawnChance);
+            Console.ReadKey();
+            enemy = new Lixoso();
+        }
+
         battleEnded = false;
     }
 
@@ -78,6 +92,7 @@ class Game
         enemy.ShowEnemyStats();
     }
 
+    // player functions
     public void PlayerTurn()
     {
         bool validMove = false;
@@ -148,8 +163,6 @@ class Game
                 ShowStats();
             }
         }
-
-
     }
 
     public void CheckItem(int index)
@@ -171,6 +184,7 @@ class Game
         items.InventoryID[index] = 0;
     }
 
+    // enemy functions
     public void EnemyTurn()
     {
         int damage = Math.Max(0, enemy.Strength - player.Defense);
@@ -179,11 +193,6 @@ class Game
         Console.ReadKey();
 
         player.Health -= damage;
-    }
-
-    public void ResetStats()
-    {
-        player.Defense = playerOriginalDefense;
     }
 
     public void CheckDrops()
@@ -205,6 +214,7 @@ class Game
         }
     }
 
+    // checking functions
     public bool CheckBattleState()
     {
         if (player.Health == 0)
@@ -216,10 +226,10 @@ class Game
         }
         else if (enemy.Health == 0)
         {
+            killCount++;
             ShowStats();
             Console.WriteLine("\nInimigo morreu. Você venceu!");
             Console.ReadKey();
-            killCount++;
 
             Console.WriteLine($"\nVocê ganhou {enemy.ExpDrop} de xp.");
             Console.ReadKey();
@@ -236,12 +246,18 @@ class Game
         {
             return true;
         }
-        else if (killCount == 3)
+        else if (killCount == 10)
         {
             Console.WriteLine($"\nVocê matou {killCount} inimigos. Fim de jogo, por enquanto.");
             return true;
         }
 
         return false;
+    }
+
+    // misc functions
+    public void ResetStats()
+    {
+        player.Defense = playerOriginalDefense;
     }
 }
