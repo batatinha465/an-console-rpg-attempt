@@ -69,17 +69,19 @@ class Game
 
     public void StartBattle()
     {
+        BaseEnemy[] enemies = [new Lixoso(), new Gordalho(), new Xexelento()];
+        
         int spawnChance = random.Next(1, 101);
 
         if (killCount >= 5 && spawnChance < 40)
         {
-            enemy = new Gordalho();
+            int index = random.Next(1, enemies.Length);
+            
+            enemy = enemies[index];
         }
         else
         {
-            Console.WriteLine(spawnChance);
-            Console.ReadKey();
-            enemy = new Lixoso();
+            enemy = enemies[0];
         }
 
         battleEnded = false;
@@ -87,6 +89,8 @@ class Game
 
     public void ShowStats()
     {
+        Console.Clear();
+        Console.WriteLine($"Batalha {killCount + 1}\n");
         player.ShowPlayerStats();
         Console.WriteLine();
         enemy.ShowEnemyStats();
@@ -195,6 +199,7 @@ class Game
         player.Health -= damage;
     }
 
+    // checking functions
     public void CheckDrops()
     {
         player.Exp += enemy.ExpDrop;
@@ -209,12 +214,10 @@ class Game
             Console.ReadKey();
 
             player.Lvl++;
-            player.MaxExp = Convert.ToInt32(player.MaxExp * 1.1);
             player.IncreaseStats();
         }
     }
 
-    // checking functions
     public bool CheckBattleState()
     {
         if (player.Health == 0)
@@ -226,13 +229,13 @@ class Game
         }
         else if (enemy.Health == 0)
         {
-            killCount++;
             ShowStats();
             Console.WriteLine("\nInimigo morreu. Você venceu!");
             Console.ReadKey();
 
             Console.WriteLine($"\nVocê ganhou {enemy.ExpDrop} de xp.");
             Console.ReadKey();
+            killCount++;
             CheckDrops();
             return true;
         }
