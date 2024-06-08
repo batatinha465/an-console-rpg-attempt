@@ -3,16 +3,16 @@
 class Player
 {
     // leveling system
-    int lvl = 1;
-    int exp = 0;
-    int maxExp = 100;
+    int lvl;
+    int exp;
+    int maxExp;
 
     // stats
-    string name = "";
-    int health = 0;
-    int maxHealth = 10;
-    int strength = 1;
-    int defense = 0;
+    readonly string name = "";
+    int health;
+    int maxHealth;
+    int strength;
+    int defense;
 
     // constructors
     public Player()
@@ -20,7 +20,14 @@ class Player
         Console.Write("Digite o nome do player: ");
         name = Console.ReadLine()!;
 
-        health = maxHealth;
+        lvl = 1;
+        exp = 0;
+        maxExp = 100;
+    
+        health = 10;
+        maxHealth = 10;
+        strength = 1;
+        defense = 0;
     }
 
     // properties
@@ -69,8 +76,6 @@ class Player
     // functions
     public void ShowPlayerStats()
     {
-        Console.Clear();
-
         Console.WriteLine($"Player  Level: {lvl}  {exp}/{maxExp}\n");
 
         Console.WriteLine($"Nome..: {name}\n" +
@@ -81,6 +86,7 @@ class Player
 
     public void IncreaseStats()
     {
+        MaxExp = Convert.ToInt32(MaxExp * 1.1);
         MaxHealth = Convert.ToInt32(MaxHealth * 1.2);
         Health = MaxHealth;
 
