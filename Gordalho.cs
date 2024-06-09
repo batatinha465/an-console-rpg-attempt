@@ -11,5 +11,9 @@ class Gordalho : BaseEnemy
         strength = 1;
         defense = 0;
         expDrop = 35;
+
+        droppableItems = ["Poção de cura simples"];
+        itemsID = [1];
+        dropChance = 35;
     }
 }

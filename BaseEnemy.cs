@@ -10,6 +10,10 @@ class BaseEnemy
     protected int defense;
     protected int expDrop;
 
+    protected string[] droppableItems = [];
+    protected int[] itemsID = [];
+    protected int dropChance;
+
     // properties
     public string Name
     {
@@ -39,6 +43,24 @@ class BaseEnemy
     {
         get { return expDrop; }
         set { expDrop = value; }
+    }
+
+    public string[] DroppableItems
+    {
+        get { return droppableItems; }
+        set { droppableItems = value; }
+    }
+
+    public int[] ItemsID
+    {
+        get { return itemsID; }
+        set { itemsID = value; }
+    }
+
+    public int DropChance
+    {
+        get { return dropChance; }
+        set { dropChance = value; }
     }
 
     // functions

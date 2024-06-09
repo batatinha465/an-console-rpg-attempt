@@ -3,14 +3,14 @@
 class Items
 {
     // lists
-    List<string> inventory = new List<string>(new string[3]);
-    List<int> inventoryID = new List<int>(new int[3]);
+    List<string> inventory = [];
+    List<int> inventoryID = [];
 
     // constructor
     public Items()
     {
-        inventory = ["Poção de cura simples", string.Empty, string.Empty];
-        inventoryID = [1, 0, 0];
+        inventory = ["Poção de cura simples"];
+        inventoryID = [1];
     }
 
     // properties
@@ -33,14 +33,9 @@ class Items
 
         for (int i = 0; i < inventory.Count; i++)
         {
-            if (inventory[i] == string.Empty)
-            {
-                Console.Write($"{i + 1} - Vazio  ");
-            }
-            else
-            {
-                Console.Write($"{i + 1} - {inventory[i]}  ");
-            }
+            Console.Write($"{i + 1} - {inventory[i]}  ");
         }
+
+        Console.Write("0 - Voltar");
     }
 }

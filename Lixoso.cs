@@ -11,5 +11,9 @@ class Lixoso : BaseEnemy
         strength = 1;
         defense = 0;
         expDrop = 20;
+
+        droppableItems = ["Poção de cura simples"];
+        itemsID = [1];
+        dropChance = 20;
     }
 }

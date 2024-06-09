@@ -11,5 +11,9 @@ class Xexelento : BaseEnemy
         strength = 2;
         defense = 0;
         expDrop = 30;
+
+        droppableItems = ["Poção de cura simples"];
+        itemsID = [1];
+        dropChance = 27;
     }
 }

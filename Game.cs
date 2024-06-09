@@ -155,9 +155,15 @@ class Game
 
             Console.Write("\n\nEscolha um item: ");
 
-            if (int.TryParse(Console.ReadLine(), out int itemChosen) && itemChosen > 0 && itemChosen < 4)
+            if (int.TryParse(Console.ReadLine(), out int itemChosen) && itemChosen > 0 && itemChosen <= items.Inventory.Count)
             {
                 CheckItem(itemChosen - 1);
+                validMove = true;
+            }
+            else if (itemChosen == 0)
+            {
+                ShowStats();
+                PlayerTurn();
                 validMove = true;
             }
             else
@@ -184,8 +190,8 @@ class Game
                 break;
         }
 
-        items.Inventory[index] = "Vazio";
-        items.InventoryID[index] = 0;
+        items.Inventory.RemoveAt(index);
+        items.InventoryID.RemoveAt(index);
     }
 
     // enemy functions
@@ -200,7 +206,7 @@ class Game
     }
 
     // checking functions
-    public void CheckDrops()
+    public void CheckExp()
     {
         player.Exp += enemy.ExpDrop;
 
@@ -215,6 +221,22 @@ class Game
 
             player.Lvl++;
             player.IncreaseStats();
+        }
+    }
+
+    public void CheckDrops()
+    {
+        int dropChance = random.Next(1, 101); 
+        
+        if (dropChance < enemy.DropChance)
+        {
+            int index = random.Next(0, enemy.DroppableItems.Length);
+
+            Console.WriteLine($"\nVocê ganhou {enemy.DroppableItems[index]}!");
+            Console.ReadKey();
+
+            items.Inventory.Add(enemy.DroppableItems[index]);
+            items.InventoryID.Add(enemy.ItemsID[index]);
         }
     }
 
@@ -236,6 +258,7 @@ class Game
             Console.WriteLine($"\nVocê ganhou {enemy.ExpDrop} de xp.");
             Console.ReadKey();
             killCount++;
+            CheckExp();
             CheckDrops();
             return true;
         }
